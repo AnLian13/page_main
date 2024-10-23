@@ -1,0 +1,457 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дизайн-студия An_Lian</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="icons8-ромб-48.png">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+ h2 {
+    text-align: center;
+}
+
+ p {
+    font-size: 18px;
+    text-align: center;
+}  
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("723aec5c253f59638def837a3e489e0e.jpg");
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links {
+  text-align: right;
+  background: #ad0085;
+  padding: 10px 30px;
+  border-bottom-left-radius: 18px;
+  /* margin-right: 115px; */
+    margin-top: 19px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.left-sidebar {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ff1616;
+}
+
+.row {
+  padding: 0 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5%;
+}
+
+.left-col {
+  flex-basis: 40%;
+}
+
+.right-col {
+  flex-basis: 55%;
+}
+
+.left-col img {
+  width: 80%;
+  cursor: pointer;
+  filter: grayscale(0);
+  transition: filter 1s;
+}
+
+.left-col img:hover {
+  filter: grayscale(1);
+}
+
+.right-col h1 {
+  font-style: 55px;
+  font-weight: 600;
+}
+
+.right-col p {
+  color: #ffffff;
+  margin: 20px 0 70px;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 30px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.icon i {
+  width: 28px;
+}
+
+.icon a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff1616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* gap: 100px 50px; */
+            padding: 100px 26px;
+        }
+
+        .container .card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 350px;
+            height: 300px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+            transition: 0.5s;
+        }
+
+        .container .card:hover {
+            height: 400px;
+        }
+
+        .container .card .imgBx {
+            position: absolute;
+            top: 20px;
+            width: 300px;
+            height: 220px;
+            /* background: #333; */
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .imgBx {
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+        }
+
+        .container .card .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 51px;
+            width: 200px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container .card .content {
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            /* padding: 0 30px; */
+            height: 35px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .container .card:hover .content {
+            top: 130px;
+            height: 250px;
+        }
+
+        .container .card .content h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--clr);
+            margin: 5px;
+        }
+
+        .container .card .content p {
+            color: #333;
+            font-size: 1.05em;
+        }
+        .container .card .content a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--clr);
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: -27px;
+        }
+
+body{
+  background:#002041;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, button{
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  padding: 1px;
+}
+
+p{
+  color:#fff;
+  text-align: center;
+  /* padding-top: 500px; */
+  /* font-size: 10px; */
+}
+
+a{
+   text-decoration:none;
+   color:#fff;
+}
+
+a:hover{
+   color:#2ecc71;
+}
+
+.main{
+  width: 100%;
+}
+
+.sub-main{
+  /* width: 30%;
+  margin:22px; */
+  float: left;
+}
+
+.button-one, .button-two, .button-three{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  /* margin: 0 0 0 100px; */
+}
+
+/*Button Two*/
+.button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  /* padding: 20px; */
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+          <a href="" class="logo">An_Lian</a>
+          <div class="nav-links">
+            <ul>
+              <li><a href="https://anlian13.github.io/obo_mne/">Об авторе</a></li>
+              <!-- <li><a href="">Service</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Connect</a></li> -->
+            </ul>
+          </div>
+        </nav>
+
+        <div class="right-col">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>
+            Приветствую! <br />
+              Моё имя - Анастасия <br />
+              Я являюсь графическим дизайнером,
+              <br>  frontend-разработчиком
+              <br> и хочу пригласить вас <br /> 
+              ознакомиться с услугами, <br /> которые я оказываю <br> на своей дизайн-студии
+            </h1>
+            <p>
+                Нужен сайт или оригинальный дизайн  <br> с любимыми персонажами, и не только? 
+                <br>
+                Вы обратились по адресу!
+            </p>
+<h2>Я создаю:</h2>
+<h3>Кликните на изображение, чтобы узнать больше</h3>
+<br>
+<div class="container">
+  <div class="card" style="--clr:#030bf4;">
+  <div class="imgBx">
+      <img src="Screenshot_20240128-210635_1.png">
+  </div>
+  <div class="content">
+      <h2>Колоду Таро</h2><br>
+      <p>На картах которой могут быть ваши любимые персонажи
+      </p>
+      <!-- <a href="https://olgina-04.wixsite.com/website/заказать-консультацию">Заказать</a> -->
+  </div>
+</div>
+<div class="container">
+  <div class="card" style="--clr:#030bf4;">
+  <div class="imgBx">
+      <img src="Календарь2025.png">
+  </div>
+  <div class="content">
+      <h2>Электронные календари</h2><br>
+      <p>Распечатать которые вы сможете в типографиях своего города. <br> 
+      </p>
+      <!-- <a href="https://olgina-04.wixsite.com/website/заказать-консультацию">Заказать</a> -->
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="card" style="--clr:#030bf4;">
+  <div class="imgBx">
+      <img src="11zon_cropped (49).png">
+  </div>
+  <div class="content">
+      <h2>Игру "Найди пару"</h2><br>
+      <p>Она поможет развить память и полюбоваться на любимых персонажей.
+          
+      </p>
+      
+  </div>
+</div>
+<div class="container">
+  <div class="card" style="--clr:#030bf4;">
+  <div class="imgBx">
+      <img src="2024-01-20_19-07-24.png">
+  </div>
+  <div class="content">
+      <h2>Квадратные мыльные пузыри</h2><br>
+      <p>Это необычный спецэффект, который поможет сделать ваш сайт уникальнее <br> 
+      </p>
+     
+  </div>
+</div>
+</div>
+<div class="card" style="--clr:#000000;">
+  <div class="imgBx">
+
+  </div>
+  <div class="content">
+      <h2>И многое другое</h2><br>
+      <p>Перейти на мою дизайн-студию и узнать больше вы сможете, кликнув по кнопке ниже
+      </p>
+      <a href="https://makinganorder.tilda.ws/">Заказать</a>
+  </div>
+</div>
+
+  
+<!-- <h3>Перейти на мою дизайн-студию и узнать больше вы сможете, кликнув по кнопке ниже</h3>
+<br>
+<div class="sub-main">
+  <button class="button-two">
+    <a href="https://makinganorder.tilda.ws/">
+    <span>Перейти на дизайн-студию</span></a></button>
+</div> -->
+
+
+
+</body>
+</html>
